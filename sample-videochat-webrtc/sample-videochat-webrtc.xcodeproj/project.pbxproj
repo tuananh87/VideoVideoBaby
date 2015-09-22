@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		115392EDA4ECBFEA8540CCAE /* libPods-sample-videochat-webrtc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7325803274C61868EC808C /* libPods-sample-videochat-webrtc.a */; };
+		14B8532A1B550CD1008D7F78 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B853261B550CD1008D7F78 /* SVIndefiniteAnimatedView.m */; };
+		14B8532B1B550CD1008D7F78 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14B853271B550CD1008D7F78 /* SVProgressHUD.bundle */; };
+		14B8532C1B550CD1008D7F78 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B853291B550CD1008D7F78 /* SVProgressHUD.m */; };
+		14B8532E1B550CFF008D7F78 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B8532D1B550CFF008D7F78 /* QuartzCore.framework */; };
+		5501A8A21AD3F61700D0AE0D /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5501A8A11AD3F61700D0AE0D /* Quickblox.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		555D5AA11AD6CC0300E2DB6D /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 555D5AA01AD6CC0300E2DB6D /* libxml2.2.dylib */; };
+		55CF63A81A3AFF2500FE8D19 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CF63A71A3AFF2500FE8D19 /* SystemConfiguration.framework */; };
+		55CF63AA1A3AFF2E00FE8D19 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CF63A91A3AFF2E00FE8D19 /* libz.dylib */; };
+		55CF63B01A3B007700FE8D19 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CF63AF1A3B007700FE8D19 /* libresolv.dylib */; };
+		55E156AF1AD6C41C00C62699 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E156AE1AD6C41C00C62699 /* MobileCoreServices.framework */; };
+		55F6BDCA1A3F21CC0080C326 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F6BDC91A3F21CC0080C326 /* GLKit.framework */; };
+		55F6BDCC1A3F21F10080C326 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F6BDCB1A3F21F10080C326 /* CFNetwork.framework */; };
+		55F6BDCE1A3F22010080C326 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F6BDCD1A3F22010080C326 /* libsqlite3.dylib */; };
+		55F6BDD01A3F221B0080C326 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F6BDCF1A3F221B0080C326 /* libc++.dylib */; };
+		55F6BDD21A3F22BE0080C326 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F6BDD11A3F22BE0080C326 /* libicucore.dylib */; };
+		55FD2E581ADE743400EBC235 /* QuickbloxWebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FD2E571ADE743400EBC235 /* QuickbloxWebRTC.framework */; };
+		FB29BBF81B32BBC0009751A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBA81B32BBC0009751A1 /* AppDelegate.m */; };
+		FB29BBF91B32BBC0009751A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB29BBA91B32BBC0009751A1 /* Main.storyboard */; };
+		FB29BBFA1B32BBC0009751A1 /* CheckUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBAE1B32BBC0009751A1 /* CheckUserTableViewCell.m */; };
+		FB29BBFB1B32BBC0009751A1 /* OpponentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBB11B32BBC0009751A1 /* OpponentCollectionViewCell.m */; };
+		FB29BBFC1B32BBC0009751A1 /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBB41B32BBC0009751A1 /* UserTableViewCell.m */; };
+		FB29BBFD1B32BBC0009751A1 /* CallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBB81B32BBC0009751A1 /* CallManager.m */; };
+		FB29BBFE1B32BBC0009751A1 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBBB1B32BBC0009751A1 /* ConnectionManager.m */; };
+		FB29BBFF1B32BBC0009751A1 /* QMSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBBE1B32BBC0009751A1 /* QMSoundManager.m */; };
+		FB29BC001B32BBC0009751A1 /* UsersDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBC11B32BBC0009751A1 /* UsersDataSource.m */; };
+		FB29BC011B32BBC0009751A1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB29BBC21B32BBC0009751A1 /* Info.plist */; };
+		FB29BC021B32BBC0009751A1 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB29BBC31B32BBC0009751A1 /* Launch Screen.xib */; };
+		FB29BC031B32BBC0009751A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBC41B32BBC0009751A1 /* main.m */; };
+		FB29BC041B32BBC0009751A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB29BBC61B32BBC0009751A1 /* Images.xcassets */; };
+		FB29BC051B32BBC0009751A1 /* androidUsers.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB29BBC81B32BBC0009751A1 /* androidUsers.plist */; };
+		FB29BC061B32BBC0009751A1 /* devUsers.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB29BBC91B32BBC0009751A1 /* devUsers.plist */; };
+		FB29BC071B32BBC0009751A1 /* qaUsers.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB29BBCA1B32BBC0009751A1 /* qaUsers.plist */; };
+		FB29BC081B32BBC0009751A1 /* releaseUsers.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB29BBCB1B32BBC0009751A1 /* releaseUsers.plist */; };
+		FB29BC091B32BBC0009751A1 /* STUNDatasource.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB29BBCC1B32BBC0009751A1 /* STUNDatasource.plist */; };
+		FB29BC0A1B32BBC0009751A1 /* busy.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB29BBCE1B32BBC0009751A1 /* busy.wav */; };
+		FB29BC0B1B32BBC0009751A1 /* calling.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB29BBCF1B32BBC0009751A1 /* calling.wav */; };
+		FB29BC0C1B32BBC0009751A1 /* end_of_call.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB29BBD01B32BBC0009751A1 /* end_of_call.wav */; };
+		FB29BC0D1B32BBC0009751A1 /* ringtone.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB29BBD11B32BBC0009751A1 /* ringtone.wav */; };
+		FB29BC0E1B32BBC0009751A1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBD51B32BBC0009751A1 /* BaseViewController.m */; };
+		FB29BC0F1B32BBC0009751A1 /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBD81B32BBC0009751A1 /* CallViewController.m */; };
+		FB29BC101B32BBC0009751A1 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBDB1B32BBC0009751A1 /* ContainerViewController.m */; };
+		FB29BC111B32BBC0009751A1 /* IncomingCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBDE1B32BBC0009751A1 /* IncomingCallViewController.m */; };
+		FB29BC121B32BBC0009751A1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBE11B32BBC0009751A1 /* LoginViewController.m */; };
+		FB29BC131B32BBC0009751A1 /* SettingsCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBE41B32BBC0009751A1 /* SettingsCallViewController.m */; };
+		FB29BC141B32BBC0009751A1 /* StunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBE71B32BBC0009751A1 /* StunViewController.m */; };
+		FB29BC151B32BBC0009751A1 /* IAButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBEB1B32BBC0009751A1 /* IAButton.m */; };
+		FB29BC161B32BBC0009751A1 /* CheckMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBEE1B32BBC0009751A1 /* CheckMarkView.m */; };
+		FB29BC171B32BBC0009751A1 /* CornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBF11B32BBC0009751A1 /* CornerView.m */; };
+		FB29BC181B32BBC0009751A1 /* QBLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBF41B32BBC0009751A1 /* QBLogoView.m */; };
+		FB29BC191B32BBC0009751A1 /* UserPicView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBF71B32BBC0009751A1 /* UserPicView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14B853251B550CD1008D7F78 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		14B853261B550CD1008D7F78 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		14B853271B550CD1008D7F78 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		14B853281B550CD1008D7F78 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		14B853291B550CD1008D7F78 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		14B8532D1B550CFF008D7F78 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1C8EC585F82B68F4EBBE0CAA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5501A8A11AD3F61700D0AE0D /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = ../Framework/Quickblox.framework; sourceTree = "<group>"; };
+		555D5AA01AD6CC0300E2DB6D /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		55CF63A71A3AFF2500FE8D19 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		55CF63A91A3AFF2E00FE8D19 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		55CF63AD1A3B004200FE8D19 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		55CF63AF1A3B007700FE8D19 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+		55E076E31A30817800118D23 /* sample-videochat-webrtc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sample-videochat-webrtc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E156AE1AD6C41C00C62699 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		55F6BDC91A3F21CC0080C326 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		55F6BDCB1A3F21F10080C326 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		55F6BDCD1A3F22010080C326 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		55F6BDCF1A3F221B0080C326 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		55F6BDD11A3F22BE0080C326 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		55FD2E571ADE743400EBC235 /* QuickbloxWebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickbloxWebRTC.framework; path = ../Framework/QuickbloxWebRTC.framework; sourceTree = "<group>"; };
+		EBC36487C8FF7D7AB27FCA75 /* Pods-sample-videochat-webrtc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample-videochat-webrtc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sample-videochat-webrtc/Pods-sample-videochat-webrtc.debug.xcconfig"; sourceTree = "<group>"; };
+		EBCD8B3F684688D944268A52 /* Pods-sample-videochat-webrtc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample-videochat-webrtc.release.xcconfig"; path = "Pods/Target Support Files/Pods-sample-videochat-webrtc/Pods-sample-videochat-webrtc.release.xcconfig"; sourceTree = "<group>"; };
+		FA7325803274C61868EC808C /* libPods-sample-videochat-webrtc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sample-videochat-webrtc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB29BBA71B32BBC0009751A1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		FB29BBA81B32BBC0009751A1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		FB29BBAA1B32BBC0009751A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB29BBAD1B32BBC0009751A1 /* CheckUserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckUserTableViewCell.h; sourceTree = "<group>"; };
+		FB29BBAE1B32BBC0009751A1 /* CheckUserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckUserTableViewCell.m; sourceTree = "<group>"; };
+		FB29BBB01B32BBC0009751A1 /* OpponentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpponentCollectionViewCell.h; sourceTree = "<group>"; };
+		FB29BBB11B32BBC0009751A1 /* OpponentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpponentCollectionViewCell.m; sourceTree = "<group>"; };
+		FB29BBB31B32BBC0009751A1 /* UserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
+		FB29BBB41B32BBC0009751A1 /* UserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
+		FB29BBB71B32BBC0009751A1 /* CallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallManager.h; sourceTree = "<group>"; };
+		FB29BBB81B32BBC0009751A1 /* CallManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallManager.m; sourceTree = "<group>"; };
+		FB29BBBA1B32BBC0009751A1 /* ConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
+		FB29BBBB1B32BBC0009751A1 /* ConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
+		FB29BBBD1B32BBC0009751A1 /* QMSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMSoundManager.h; sourceTree = "<group>"; };
+		FB29BBBE1B32BBC0009751A1 /* QMSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMSoundManager.m; sourceTree = "<group>"; };
+		FB29BBC01B32BBC0009751A1 /* UsersDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersDataSource.h; sourceTree = "<group>"; };
+		FB29BBC11B32BBC0009751A1 /* UsersDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersDataSource.m; sourceTree = "<group>"; };
+		FB29BBC21B32BBC0009751A1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		FB29BBC31B32BBC0009751A1 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		FB29BBC41B32BBC0009751A1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
+		FB29BBC61B32BBC0009751A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FB29BBC81B32BBC0009751A1 /* androidUsers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = androidUsers.plist; sourceTree = "<group>"; };
+		FB29BBC91B32BBC0009751A1 /* devUsers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = devUsers.plist; sourceTree = "<group>"; };
+		FB29BBCA1B32BBC0009751A1 /* qaUsers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = qaUsers.plist; sourceTree = "<group>"; };
+		FB29BBCB1B32BBC0009751A1 /* releaseUsers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = releaseUsers.plist; sourceTree = "<group>"; };
+		FB29BBCC1B32BBC0009751A1 /* STUNDatasource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = STUNDatasource.plist; sourceTree = "<group>"; };
+		FB29BBCE1B32BBC0009751A1 /* busy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = busy.wav; sourceTree = "<group>"; };
+		FB29BBCF1B32BBC0009751A1 /* calling.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = calling.wav; sourceTree = "<group>"; };
+		FB29BBD01B32BBC0009751A1 /* end_of_call.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = end_of_call.wav; sourceTree = "<group>"; };
+		FB29BBD11B32BBC0009751A1 /* ringtone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ringtone.wav; sourceTree = "<group>"; };
+		FB29BBD41B32BBC0009751A1 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		FB29BBD51B32BBC0009751A1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		FB29BBD71B32BBC0009751A1 /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
+		FB29BBD81B32BBC0009751A1 /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
+		FB29BBDA1B32BBC0009751A1 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		FB29BBDB1B32BBC0009751A1 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		FB29BBDD1B32BBC0009751A1 /* IncomingCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomingCallViewController.h; sourceTree = "<group>"; };
+		FB29BBDE1B32BBC0009751A1 /* IncomingCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomingCallViewController.m; sourceTree = "<group>"; };
+		FB29BBE01B32BBC0009751A1 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FB29BBE11B32BBC0009751A1 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FB29BBE31B32BBC0009751A1 /* SettingsCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsCallViewController.h; sourceTree = "<group>"; };
+		FB29BBE41B32BBC0009751A1 /* SettingsCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsCallViewController.m; sourceTree = "<group>"; };
+		FB29BBE61B32BBC0009751A1 /* StunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StunViewController.h; sourceTree = "<group>"; };
+		FB29BBE71B32BBC0009751A1 /* StunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StunViewController.m; sourceTree = "<group>"; };
+		FB29BBEA1B32BBC0009751A1 /* IAButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAButton.h; sourceTree = "<group>"; };
+		FB29BBEB1B32BBC0009751A1 /* IAButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAButton.m; sourceTree = "<group>"; };
+		FB29BBED1B32BBC0009751A1 /* CheckMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckMarkView.h; sourceTree = "<group>"; };
+		FB29BBEE1B32BBC0009751A1 /* CheckMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckMarkView.m; sourceTree = "<group>"; };
+		FB29BBF01B32BBC0009751A1 /* CornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CornerView.h; sourceTree = "<group>"; };
+		FB29BBF11B32BBC0009751A1 /* CornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CornerView.m; sourceTree = "<group>"; };
+		FB29BBF31B32BBC0009751A1 /* QBLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBLogoView.h; sourceTree = "<group>"; };
+		FB29BBF41B32BBC0009751A1 /* QBLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBLogoView.m; sourceTree = "<group>"; };
+		FB29BBF61B32BBC0009751A1 /* UserPicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPicView.h; sourceTree = "<group>"; };
+		FB29BBF71B32BBC0009751A1 /* UserPicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPicView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55E076E01A30817800118D23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B8532E1B550CFF008D7F78 /* QuartzCore.framework in Frameworks */,
+				555D5AA11AD6CC0300E2DB6D /* libxml2.2.dylib in Frameworks */,
+				55F6BDD21A3F22BE0080C326 /* libicucore.dylib in Frameworks */,
+				55F6BDD01A3F221B0080C326 /* libc++.dylib in Frameworks */,
+				55F6BDCE1A3F22010080C326 /* libsqlite3.dylib in Frameworks */,
+				55CF63B01A3B007700FE8D19 /* libresolv.dylib in Frameworks */,
+				55CF63AA1A3AFF2E00FE8D19 /* libz.dylib in Frameworks */,
+				55FD2E581ADE743400EBC235 /* QuickbloxWebRTC.framework in Frameworks */,
+				5501A8A21AD3F61700D0AE0D /* Quickblox.framework in Frameworks */,
+				55E156AF1AD6C41C00C62699 /* MobileCoreServices.framework in Frameworks */,
+				55F6BDCC1A3F21F10080C326 /* CFNetwork.framework in Frameworks */,
+				55F6BDCA1A3F21CC0080C326 /* GLKit.framework in Frameworks */,
+				55CF63A81A3AFF2500FE8D19 /* SystemConfiguration.framework in Frameworks */,
+				115392EDA4ECBFEA8540CCAE /* libPods-sample-videochat-webrtc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B853241B550CBA008D7F78 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				14B853251B550CD1008D7F78 /* SVIndefiniteAnimatedView.h */,
+				14B853261B550CD1008D7F78 /* SVIndefiniteAnimatedView.m */,
+				14B853271B550CD1008D7F78 /* SVProgressHUD.bundle */,
+				14B853281B550CD1008D7F78 /* SVProgressHUD.h */,
+				14B853291B550CD1008D7F78 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		55E076DA1A30817800118D23 = {
+			isa = PBXGroup;
+			children = (
+				FB29BBA61B32BBC0009751A1 /* sample-videochat-webrtc */,
+				FB29BBC51B32BBC0009751A1 /* Resources */,
+				55E076E41A30817800118D23 /* Products */,
+				AB35EE3F551E29A444EB63EF /* Frameworks */,
+				7342A4A2F940B012F0364758 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		55E076E41A30817800118D23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55E076E31A30817800118D23 /* sample-videochat-webrtc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7342A4A2F940B012F0364758 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBC36487C8FF7D7AB27FCA75 /* Pods-sample-videochat-webrtc.debug.xcconfig */,
+				EBCD8B3F684688D944268A52 /* Pods-sample-videochat-webrtc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB35EE3F551E29A444EB63EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14B8532D1B550CFF008D7F78 /* QuartzCore.framework */,
+				555D5AA01AD6CC0300E2DB6D /* libxml2.2.dylib */,
+				55FD2E571ADE743400EBC235 /* QuickbloxWebRTC.framework */,
+				55E156AE1AD6C41C00C62699 /* MobileCoreServices.framework */,
+				5501A8A11AD3F61700D0AE0D /* Quickblox.framework */,
+				55F6BDD11A3F22BE0080C326 /* libicucore.dylib */,
+				55F6BDCF1A3F221B0080C326 /* libc++.dylib */,
+				55F6BDCD1A3F22010080C326 /* libsqlite3.dylib */,
+				55CF63AF1A3B007700FE8D19 /* libresolv.dylib */,
+				55CF63AD1A3B004200FE8D19 /* libxml2.dylib */,
+				55CF63A91A3AFF2E00FE8D19 /* libz.dylib */,
+				55F6BDCB1A3F21F10080C326 /* CFNetwork.framework */,
+				55F6BDC91A3F21CC0080C326 /* GLKit.framework */,
+				55CF63A71A3AFF2500FE8D19 /* SystemConfiguration.framework */,
+				FA7325803274C61868EC808C /* libPods-sample-videochat-webrtc.a */,
+				1C8EC585F82B68F4EBBE0CAA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB29BBA61B32BBC0009751A1 /* sample-videochat-webrtc */ = {
+			isa = PBXGroup;
+			children = (
+				14B853241B550CBA008D7F78 /* SVProgressHUD */,
+				FB29BC1A1B32BBF3009751A1 /* App */,
+				FB29BC1B1B32BC16009751A1 /* Storyboartd & xibs */,
+				FB29BBAB1B32BBC0009751A1 /* Cells */,
+				FB29BBB51B32BBC0009751A1 /* Classes */,
+				FB29BBD21B32BBC0009751A1 /* ViewControllers */,
+				FB29BBE81B32BBC0009751A1 /* Views */,
+			);
+			path = "sample-videochat-webrtc";
+			sourceTree = "<group>";
+		};
+		FB29BBAB1B32BBC0009751A1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBAC1B32BBC0009751A1 /* CheckUserTableViewCell */,
+				FB29BBAF1B32BBC0009751A1 /* OpponentCollectionViewCell */,
+				FB29BBB21B32BBC0009751A1 /* UserTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FB29BBAC1B32BBC0009751A1 /* CheckUserTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBAD1B32BBC0009751A1 /* CheckUserTableViewCell.h */,
+				FB29BBAE1B32BBC0009751A1 /* CheckUserTableViewCell.m */,
+			);
+			path = CheckUserTableViewCell;
+			sourceTree = "<group>";
+		};
+		FB29BBAF1B32BBC0009751A1 /* OpponentCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBB01B32BBC0009751A1 /* OpponentCollectionViewCell.h */,
+				FB29BBB11B32BBC0009751A1 /* OpponentCollectionViewCell.m */,
+			);
+			path = OpponentCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FB29BBB21B32BBC0009751A1 /* UserTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBB31B32BBC0009751A1 /* UserTableViewCell.h */,
+				FB29BBB41B32BBC0009751A1 /* UserTableViewCell.m */,
+			);
+			path = UserTableViewCell;
+			sourceTree = "<group>";
+		};
+		FB29BBB51B32BBC0009751A1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBB61B32BBC0009751A1 /* CallManager */,
+				FB29BBB91B32BBC0009751A1 /* ConnectionManager */,
+				FB29BBBC1B32BBC0009751A1 /* QMSoundManager */,
+				FB29BBBF1B32BBC0009751A1 /* UsersDataSource */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FB29BBB61B32BBC0009751A1 /* CallManager */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBB71B32BBC0009751A1 /* CallManager.h */,
+				FB29BBB81B32BBC0009751A1 /* CallManager.m */,
+			);
+			path = CallManager;
+			sourceTree = "<group>";
+		};
+		FB29BBB91B32BBC0009751A1 /* ConnectionManager */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBBA1B32BBC0009751A1 /* ConnectionManager.h */,
+				FB29BBBB1B32BBC0009751A1 /* ConnectionManager.m */,
+			);
+			path = ConnectionManager;
+			sourceTree = "<group>";
+		};
+		FB29BBBC1B32BBC0009751A1 /* QMSoundManager */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBBD1B32BBC0009751A1 /* QMSoundManager.h */,
+				FB29BBBE1B32BBC0009751A1 /* QMSoundManager.m */,
+			);
+			path = QMSoundManager;
+			sourceTree = "<group>";
+		};
+		FB29BBBF1B32BBC0009751A1 /* UsersDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBC01B32BBC0009751A1 /* UsersDataSource.h */,
+				FB29BBC11B32BBC0009751A1 /* UsersDataSource.m */,
+			);
+			path = UsersDataSource;
+			sourceTree = "<group>";
+		};
+		FB29BBC51B32BBC0009751A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBC21B32BBC0009751A1 /* Info.plist */,
+				FB29BBC61B32BBC0009751A1 /* Images.xcassets */,
+				FB29BBC71B32BBC0009751A1 /* Plists */,
+				FB29BBCD1B32BBC0009751A1 /* Sounds */,
+			);
+			name = Resources;
+			path = "sample-videochat-webrtc/Resources";
+			sourceTree = "<group>";
+		};
+		FB29BBC71B32BBC0009751A1 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBC81B32BBC0009751A1 /* androidUsers.plist */,
+				FB29BBC91B32BBC0009751A1 /* devUsers.plist */,
+				FB29BBCA1B32BBC0009751A1 /* qaUsers.plist */,
+				FB29BBCB1B32BBC0009751A1 /* releaseUsers.plist */,
+				FB29BBCC1B32BBC0009751A1 /* STUNDatasource.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		FB29BBCD1B32BBC0009751A1 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBCE1B32BBC0009751A1 /* busy.wav */,
+				FB29BBCF1B32BBC0009751A1 /* calling.wav */,
+				FB29BBD01B32BBC0009751A1 /* end_of_call.wav */,
+				FB29BBD11B32BBC0009751A1 /* ringtone.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		FB29BBD21B32BBC0009751A1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBD31B32BBC0009751A1 /* BaseViewController */,
+				FB29BBD61B32BBC0009751A1 /* CallViewController */,
+				FB29BBD91B32BBC0009751A1 /* ContainerViewController */,
+				FB29BBDC1B32BBC0009751A1 /* IncomingCallViewController */,
+				FB29BBDF1B32BBC0009751A1 /* LoginViewController */,
+				FB29BBE21B32BBC0009751A1 /* SettingsCallViewController */,
+				FB29BBE51B32BBC0009751A1 /* StunViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FB29BBD31B32BBC0009751A1 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBD41B32BBC0009751A1 /* BaseViewController.h */,
+				FB29BBD51B32BBC0009751A1 /* BaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		FB29BBD61B32BBC0009751A1 /* CallViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBD71B32BBC0009751A1 /* CallViewController.h */,
+				FB29BBD81B32BBC0009751A1 /* CallViewController.m */,
+			);
+			path = CallViewController;
+			sourceTree = "<group>";
+		};
+		FB29BBD91B32BBC0009751A1 /* ContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBDA1B32BBC0009751A1 /* ContainerViewController.h */,
+				FB29BBDB1B32BBC0009751A1 /* ContainerViewController.m */,
+			);
+			path = ContainerViewController;
+			sourceTree = "<group>";
+		};
+		FB29BBDC1B32BBC0009751A1 /* IncomingCallViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBDD1B32BBC0009751A1 /* IncomingCallViewController.h */,
+				FB29BBDE1B32BBC0009751A1 /* IncomingCallViewController.m */,
+			);
+			path = IncomingCallViewController;
+			sourceTree = "<group>";
+		};
+		FB29BBDF1B32BBC0009751A1 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBE01B32BBC0009751A1 /* LoginViewController.h */,
+				FB29BBE11B32BBC0009751A1 /* LoginViewController.m */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		FB29BBE21B32BBC0009751A1 /* SettingsCallViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBE31B32BBC0009751A1 /* SettingsCallViewController.h */,
+				FB29BBE41B32BBC0009751A1 /* SettingsCallViewController.m */,
+			);
+			path = SettingsCallViewController;
+			sourceTree = "<group>";
+		};
+		FB29BBE51B32BBC0009751A1 /* StunViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBE61B32BBC0009751A1 /* StunViewController.h */,
+				FB29BBE71B32BBC0009751A1 /* StunViewController.m */,
+			);
+			path = StunViewController;
+			sourceTree = "<group>";
+		};
+		FB29BBE81B32BBC0009751A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBE91B32BBC0009751A1 /* AIButton */,
+				FB29BBEC1B32BBC0009751A1 /* CheckMarkView */,
+				FB29BBEF1B32BBC0009751A1 /* CornerView */,
+				FB29BBF21B32BBC0009751A1 /* QBLogoView */,
+				FB29BBF51B32BBC0009751A1 /* UserPicView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB29BBE91B32BBC0009751A1 /* AIButton */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBEA1B32BBC0009751A1 /* IAButton.h */,
+				FB29BBEB1B32BBC0009751A1 /* IAButton.m */,
+			);
+			path = AIButton;
+			sourceTree = "<group>";
+		};
+		FB29BBEC1B32BBC0009751A1 /* CheckMarkView */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBED1B32BBC0009751A1 /* CheckMarkView.h */,
+				FB29BBEE1B32BBC0009751A1 /* CheckMarkView.m */,
+			);
+			path = CheckMarkView;
+			sourceTree = "<group>";
+		};
+		FB29BBEF1B32BBC0009751A1 /* CornerView */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBF01B32BBC0009751A1 /* CornerView.h */,
+				FB29BBF11B32BBC0009751A1 /* CornerView.m */,
+			);
+			path = CornerView;
+			sourceTree = "<group>";
+		};
+		FB29BBF21B32BBC0009751A1 /* QBLogoView */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBF31B32BBC0009751A1 /* QBLogoView.h */,
+				FB29BBF41B32BBC0009751A1 /* QBLogoView.m */,
+			);
+			path = QBLogoView;
+			sourceTree = "<group>";
+		};
+		FB29BBF51B32BBC0009751A1 /* UserPicView */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBF61B32BBC0009751A1 /* UserPicView.h */,
+				FB29BBF71B32BBC0009751A1 /* UserPicView.m */,
+			);
+			path = UserPicView;
+			sourceTree = "<group>";
+		};
+		FB29BC1A1B32BBF3009751A1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBC41B32BBC0009751A1 /* main.m */,
+				FB29BBA71B32BBC0009751A1 /* AppDelegate.h */,
+				FB29BBA81B32BBC0009751A1 /* AppDelegate.m */,
+			);
+			name = App;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FB29BC1B1B32BC16009751A1 /* Storyboartd & xibs */ = {
+			isa = PBXGroup;
+			children = (
+				FB29BBA91B32BBC0009751A1 /* Main.storyboard */,
+				FB29BBC31B32BBC0009751A1 /* Launch Screen.xib */,
+			);
+			name = "Storyboartd & xibs";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55E076E21A30817800118D23 /* sample-videochat-webrtc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55E077061A30817900118D23 /* Build configuration list for PBXNativeTarget "sample-videochat-webrtc" */;
+			buildPhases = (
+				062F6440CF39A5E2A59D50E2 /* Check Pods Manifest.lock */,
+				55E076DF1A30817800118D23 /* Sources */,
+				55E076E01A30817800118D23 /* Frameworks */,
+				55E076E11A30817800118D23 /* Resources */,
+				C500D2B6A60C141A3EB3E61B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sample-videochat-webrtc";
+			productName = QBRTCChatSemple;
+			productReference = 55E076E31A30817800118D23 /* sample-videochat-webrtc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55E076DB1A30817800118D23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "QuickBlox Team";
+				TargetAttributes = {
+					55E076E21A30817800118D23 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 8885H5G2YX;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 55E076DE1A30817800118D23 /* Build configuration list for PBXProject "sample-videochat-webrtc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55E076DA1A30817800118D23;
+			productRefGroup = 55E076E41A30817800118D23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55E076E21A30817800118D23 /* sample-videochat-webrtc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55E076E11A30817800118D23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB29BC051B32BBC0009751A1 /* androidUsers.plist in Resources */,
+				FB29BC061B32BBC0009751A1 /* devUsers.plist in Resources */,
+				FB29BC011B32BBC0009751A1 /* Info.plist in Resources */,
+				FB29BC071B32BBC0009751A1 /* qaUsers.plist in Resources */,
+				FB29BC041B32BBC0009751A1 /* Images.xcassets in Resources */,
+				FB29BC0D1B32BBC0009751A1 /* ringtone.wav in Resources */,
+				FB29BC0C1B32BBC0009751A1 /* end_of_call.wav in Resources */,
+				14B8532B1B550CD1008D7F78 /* SVProgressHUD.bundle in Resources */,
+				FB29BC0A1B32BBC0009751A1 /* busy.wav in Resources */,
+				FB29BC0B1B32BBC0009751A1 /* calling.wav in Resources */,
+				FB29BBF91B32BBC0009751A1 /* Main.storyboard in Resources */,
+				FB29BC021B32BBC0009751A1 /* Launch Screen.xib in Resources */,
+				FB29BC091B32BBC0009751A1 /* STUNDatasource.plist in Resources */,
+				FB29BC081B32BBC0009751A1 /* releaseUsers.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		062F6440CF39A5E2A59D50E2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C500D2B6A60C141A3EB3E61B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sample-videochat-webrtc/Pods-sample-videochat-webrtc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55E076DF1A30817800118D23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB29BC131B32BBC0009751A1 /* SettingsCallViewController.m in Sources */,
+				FB29BBFC1B32BBC0009751A1 /* UserTableViewCell.m in Sources */,
+				FB29BC0E1B32BBC0009751A1 /* BaseViewController.m in Sources */,
+				FB29BC101B32BBC0009751A1 /* ContainerViewController.m in Sources */,
+				FB29BC171B32BBC0009751A1 /* CornerView.m in Sources */,
+				FB29BC111B32BBC0009751A1 /* IncomingCallViewController.m in Sources */,
+				FB29BC181B32BBC0009751A1 /* QBLogoView.m in Sources */,
+				FB29BC121B32BBC0009751A1 /* LoginViewController.m in Sources */,
+				FB29BC001B32BBC0009751A1 /* UsersDataSource.m in Sources */,
+				14B8532A1B550CD1008D7F78 /* SVIndefiniteAnimatedView.m in Sources */,
+				14B8532C1B550CD1008D7F78 /* SVProgressHUD.m in Sources */,
+				FB29BBFD1B32BBC0009751A1 /* CallManager.m in Sources */,
+				FB29BC141B32BBC0009751A1 /* StunViewController.m in Sources */,
+				FB29BBFB1B32BBC0009751A1 /* OpponentCollectionViewCell.m in Sources */,
+				FB29BBFE1B32BBC0009751A1 /* ConnectionManager.m in Sources */,
+				FB29BC191B32BBC0009751A1 /* UserPicView.m in Sources */,
+				FB29BBFF1B32BBC0009751A1 /* QMSoundManager.m in Sources */,
+				FB29BC161B32BBC0009751A1 /* CheckMarkView.m in Sources */,
+				FB29BBF81B32BBC0009751A1 /* AppDelegate.m in Sources */,
+				FB29BC031B32BBC0009751A1 /* main.m in Sources */,
+				FB29BC151B32BBC0009751A1 /* IAButton.m in Sources */,
+				FB29BC0F1B32BBC0009751A1 /* CallViewController.m in Sources */,
+				FB29BBFA1B32BBC0009751A1 /* CheckUserTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB29BBA91B32BBC0009751A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB29BBAA1B32BBC0009751A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55E077041A30817900118D23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "3f3666e5-0de4-4af0-a260-af8921b354dd";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		55E077051A30817900118D23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "8167ef38-4b98-4550-be1c-167027a7ce74";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55E077071A30817900118D23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBC36487C8FF7D7AB27FCA75 /* Pods-sample-videochat-webrtc.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taras Filatov (6AVH4TA956)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Framework\"",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = "sample-videochat-webrtc-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/include/libxml2\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "sample-videochat-webrtc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "sample-videochat-webrtc";
+				PROVISIONING_PROFILE = "ee2916f1-b8db-4b90-8d21-b3b56fcf4341";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		55E077081A30817900118D23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBCD8B3F684688D944268A52 /* Pods-sample-videochat-webrtc.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Framework\"",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = "sample-videochat-webrtc-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/include/libxml2\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "sample-videochat-webrtc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "sample-videochat-webrtc";
+				PROVISIONING_PROFILE = "8167ef38-4b98-4550-be1c-167027a7ce74";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55E076DE1A30817800118D23 /* Build configuration list for PBXProject "sample-videochat-webrtc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E077041A30817900118D23 /* Debug */,
+				55E077051A30817900118D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55E077061A30817900118D23 /* Build configuration list for PBXNativeTarget "sample-videochat-webrtc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E077071A30817900118D23 /* Debug */,
+				55E077081A30817900118D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55E076DB1A30817800118D23 /* Project object */;
+}
