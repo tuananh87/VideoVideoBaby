@@ -15,10 +15,10 @@ const CGFloat kQBRingThickness = 1.f;
 const NSTimeInterval kQBAnswerTimeInterval = 60.f;
 const NSTimeInterval kQBRTCDisconnectTimeInterval = 30.f;
 
-const NSUInteger kQBApplicationID = 92;
-NSString *const kQBRegisterServiceKey = @"wJHdOcQSxXQGWx5";
-NSString *const kQBRegisterServiceSecret = @"BTFsj7Rtt27DAmT";
-NSString *const kQBAccountKey = @"7yvNe17TnjNUqDoPwfqp";
+const NSUInteger kQBApplicationID = 28583;
+NSString *const kQBRegisterServiceKey = @"hJRjUj2kxHvMPdB";
+NSString *const kQBRegisterServiceSecret = @"mtdNRWmkmQC6K9u";
+NSString *const kQBAccountKey = @"sqZ8T1pAfW8VFjxpynLP";
 
 @implementation AppDelegate
 

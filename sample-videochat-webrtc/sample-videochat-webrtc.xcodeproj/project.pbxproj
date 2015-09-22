@@ -12,7 +12,6 @@
 		14B8532B1B550CD1008D7F78 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14B853271B550CD1008D7F78 /* SVProgressHUD.bundle */; };
 		14B8532C1B550CD1008D7F78 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B853291B550CD1008D7F78 /* SVProgressHUD.m */; };
 		14B8532E1B550CFF008D7F78 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B8532D1B550CFF008D7F78 /* QuartzCore.framework */; };
-		5501A8A21AD3F61700D0AE0D /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5501A8A11AD3F61700D0AE0D /* Quickblox.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		555D5AA11AD6CC0300E2DB6D /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 555D5AA01AD6CC0300E2DB6D /* libxml2.2.dylib */; };
 		55CF63A81A3AFF2500FE8D19 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CF63A71A3AFF2500FE8D19 /* SystemConfiguration.framework */; };
 		55CF63AA1A3AFF2E00FE8D19 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CF63A91A3AFF2E00FE8D19 /* libz.dylib */; };
@@ -23,7 +22,8 @@
 		55F6BDCE1A3F22010080C326 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F6BDCD1A3F22010080C326 /* libsqlite3.dylib */; };
 		55F6BDD01A3F221B0080C326 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F6BDCF1A3F221B0080C326 /* libc++.dylib */; };
 		55F6BDD21A3F22BE0080C326 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F6BDD11A3F22BE0080C326 /* libicucore.dylib */; };
-		55FD2E581ADE743400EBC235 /* QuickbloxWebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FD2E571ADE743400EBC235 /* QuickbloxWebRTC.framework */; };
+		B4F990971BB0E8FA008CD667 /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F990951BB0E8FA008CD667 /* Quickblox.framework */; };
+		B4F990981BB0E8FA008CD667 /* QuickbloxWebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F990961BB0E8FA008CD667 /* QuickbloxWebRTC.framework */; };
 		FB29BBF81B32BBC0009751A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBA81B32BBC0009751A1 /* AppDelegate.m */; };
 		FB29BBF91B32BBC0009751A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB29BBA91B32BBC0009751A1 /* Main.storyboard */; };
 		FB29BBFA1B32BBC0009751A1 /* CheckUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB29BBAE1B32BBC0009751A1 /* CheckUserTableViewCell.m */; };
@@ -68,7 +68,6 @@
 		14B853291B550CD1008D7F78 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
 		14B8532D1B550CFF008D7F78 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1C8EC585F82B68F4EBBE0CAA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5501A8A11AD3F61700D0AE0D /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = ../Framework/Quickblox.framework; sourceTree = "<group>"; };
 		555D5AA01AD6CC0300E2DB6D /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		55CF63A71A3AFF2500FE8D19 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		55CF63A91A3AFF2E00FE8D19 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -81,7 +80,8 @@
 		55F6BDCD1A3F22010080C326 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		55F6BDCF1A3F221B0080C326 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		55F6BDD11A3F22BE0080C326 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		55FD2E571ADE743400EBC235 /* QuickbloxWebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickbloxWebRTC.framework; path = ../Framework/QuickbloxWebRTC.framework; sourceTree = "<group>"; };
+		B4F990951BB0E8FA008CD667 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quickblox.framework; sourceTree = "<group>"; };
+		B4F990961BB0E8FA008CD667 /* QuickbloxWebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuickbloxWebRTC.framework; sourceTree = "<group>"; };
 		EBC36487C8FF7D7AB27FCA75 /* Pods-sample-videochat-webrtc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample-videochat-webrtc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sample-videochat-webrtc/Pods-sample-videochat-webrtc.debug.xcconfig"; sourceTree = "<group>"; };
 		EBCD8B3F684688D944268A52 /* Pods-sample-videochat-webrtc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample-videochat-webrtc.release.xcconfig"; path = "Pods/Target Support Files/Pods-sample-videochat-webrtc/Pods-sample-videochat-webrtc.release.xcconfig"; sourceTree = "<group>"; };
 		FA7325803274C61868EC808C /* libPods-sample-videochat-webrtc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sample-videochat-webrtc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,12 +153,12 @@
 				55F6BDCE1A3F22010080C326 /* libsqlite3.dylib in Frameworks */,
 				55CF63B01A3B007700FE8D19 /* libresolv.dylib in Frameworks */,
 				55CF63AA1A3AFF2E00FE8D19 /* libz.dylib in Frameworks */,
-				55FD2E581ADE743400EBC235 /* QuickbloxWebRTC.framework in Frameworks */,
-				5501A8A21AD3F61700D0AE0D /* Quickblox.framework in Frameworks */,
 				55E156AF1AD6C41C00C62699 /* MobileCoreServices.framework in Frameworks */,
 				55F6BDCC1A3F21F10080C326 /* CFNetwork.framework in Frameworks */,
+				B4F990971BB0E8FA008CD667 /* Quickblox.framework in Frameworks */,
 				55F6BDCA1A3F21CC0080C326 /* GLKit.framework in Frameworks */,
 				55CF63A81A3AFF2500FE8D19 /* SystemConfiguration.framework in Frameworks */,
+				B4F990981BB0E8FA008CD667 /* QuickbloxWebRTC.framework in Frameworks */,
 				115392EDA4ECBFEA8540CCAE /* libPods-sample-videochat-webrtc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,9 +211,9 @@
 			children = (
 				14B8532D1B550CFF008D7F78 /* QuartzCore.framework */,
 				555D5AA01AD6CC0300E2DB6D /* libxml2.2.dylib */,
-				55FD2E571ADE743400EBC235 /* QuickbloxWebRTC.framework */,
+				B4F990951BB0E8FA008CD667 /* Quickblox.framework */,
+				B4F990961BB0E8FA008CD667 /* QuickbloxWebRTC.framework */,
 				55E156AE1AD6C41C00C62699 /* MobileCoreServices.framework */,
-				5501A8A11AD3F61700D0AE0D /* Quickblox.framework */,
 				55F6BDD11A3F22BE0080C326 /* libicucore.dylib */,
 				55F6BDCF1A3F221B0080C326 /* libc++.dylib */,
 				55F6BDCD1A3F22010080C326 /* libsqlite3.dylib */,
@@ -764,11 +764,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taras Filatov (6AVH4TA956)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: My Nguyen (9A9BH2Z595)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: My Nguyen (9A9BH2Z595)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Framework\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "sample-videochat-webrtc-Prefix.pch";
@@ -777,7 +778,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "sample-videochat-webrtc/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
@@ -786,7 +787,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_NAME = "sample-videochat-webrtc";
-				PROVISIONING_PROFILE = "ee2916f1-b8db-4b90-8d21-b3b56fcf4341";
+				PROVISIONING_PROFILE = "a163fde1-88f4-4afa-9048-f7b23ef3419f";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";
@@ -799,11 +800,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: My Nguyen (9A9BH2Z595)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: My Nguyen (9A9BH2Z595)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Framework\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = "sample-videochat-webrtc-Prefix.pch";
@@ -812,7 +814,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "sample-videochat-webrtc/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
@@ -820,7 +822,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_NAME = "sample-videochat-webrtc";
-				PROVISIONING_PROFILE = "8167ef38-4b98-4550-be1c-167027a7ce74";
+				PROVISIONING_PROFILE = "a163fde1-88f4-4afa-9048-f7b23ef3419f";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";
