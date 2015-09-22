@@ -41,7 +41,10 @@ const NSTimeInterval kChatPresenceTimeInterval = 45;
 
 - (void)logInWithUser:(QBUUser *)user
            completion:(void (^)(BOOL error))completion {
-    
+    user.ID = 5519550; /** tuanem */
+//    user.ID = 5517490; /** tuananh */
+
+    user.password = @"anhdaica";
     [QBChat.instance loginWithUser:user];
     [QBChat.instance addDelegate:self];
     
